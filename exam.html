@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <script>
+
+               var value;
+               
+               if ( 3 >=3 )
+                   value=0;
+               else
+                   value=1;
+               
+               switch (value) {
+               
+               case 0:
+               document.write( "boo" );
+               
+               case 1:
+               document.write( "hoo" );
+               }
+               
+               </script>
+          </head>
+          
+          <body>
+           <form name="myForm">
+             First Number: <input type="number" name="num1" id="num1"><br><br>
+             Second Number: <input type="number" name="num2" id="num2"><br><br>
+             <input type="button" onclick="process()" value="SUBMIT">
+             <input type="reset" value="RESET">
+           </form>
+           <p>Result: <span id="result"></span></p>
+          </body>
+          
+</html>

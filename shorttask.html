@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link href="style/shorttask.css"  rel="stylesheet"/>
+<script>
+function validate() {
+      var name = document.forms["myform"].elements["name"].value;
+      var msg = "Name cannot be blank";
+
+      if (name == "" || name == null) {
+           alert (msg);
+           return false;
+      }
+}
+</script>
+</head>
+
+<body>
+<form name="myform">
+     <input type="text" name="name" size="30">
+     <input type="button" onclick="validate()" value="SUBMIT">
+     <input type="reset" value="RESET">
+</form>
+</body>
+</html>
